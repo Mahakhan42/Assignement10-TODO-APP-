@@ -1,0 +1,74 @@
+:root{
+    --dark : #374151;
+    --darker : #1F2937;
+    --gray : #6B7280;
+    --light : #EEE;
+    --pink : #EC4899;
+    --purple : #8B5Cf6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'fira sans',sans-serif;
+}
+body{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: #FFF;
+}
+section{
+  background-color: black;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+}
+#inputField{
+    width: 50%;
+    padding: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: var(--pink) ;
+    color: white;
+    border: none;
+}
+.Editbtn{
+     background-color: var(--purple);
+     border-radius: 5px;
+}
+.btn{
+    background-color: var(--gray);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color:var(--darker);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    #inputField {
+        width: 100%;
+    }
+}
